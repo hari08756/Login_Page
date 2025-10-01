@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In & Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-section">
+            <h1 id="welcome-title">Hello, Friend!</h1>
+            <p id="welcome-text">Enter your personal details and start your journey with us</p>
+            <a class="btn" id="toggle-btn">Sign Up</a>
+        </div>
+        
+        <div class="form-section">
+            <div class="form-container">
+                <!-- Sign In Form -->
+                <div class="form-page active" id="signin-page">
+                    <h2 class="form-title">Sign In</h2>
+                    <p class="form-subtitle">Sign in to your account to continue</p>
+                    
+                    <div class="social-login">
+                        <div class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            <span>Google</span>
+                        </div>
+                        <div class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </div>
+                    </div>
+                    
+                    <div class="divider">or use your email</div>
+                    
+                    <form id="signin-form">
+                        <div class="form-group">
+                            <label for="signin-email">Email Address</label>
+                            <input type="email" id="signin-email" placeholder="Enter your email">
+                            <div class="error">Please enter a valid email address</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="signin-password">Password</label>
+                            <input type="password" id="signin-password" placeholder="Enter your password">
+                            <div class="error">Password must be at least 6 characters</div>
+                        </div>
+                        
+                        <div class="remember-forgot">
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember">
+                                <label for="remember">Remember me</label>
+                            </div>
+                            <a href="#" class="forgot-password">Forgot password?</a>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Sign In</button>
+                        
+                        <div class="toggle-form">
+                            Don't have an account? <a id="show-signup">Sign up</a>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Sign Up Form -->
+                <div class="form-page" id="signup-page">
+                    <h2 class="form-title">Create Account</h2>
+                    <p class="form-subtitle">Fill in your details to create an account</p>
+                    
+                    <div class="social-login">
+                        <div class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            <span>Google</span>
+                        </div>
+                        <div class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </div>
+                    </div>
+                    
+                    <div class="divider">or use your email</div>
+                    
+                    <form id="signup-form">
+                        <div class="form-group">
+                            <label for="signup-name">Full Name</label>
+                            <input type="text" id="signup-name" placeholder="Enter your full name">
+                            <div class="error">Please enter your full name</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="signup-email">Email Address</label>
+                            <input type="email" id="signup-email" placeholder="Enter your email">
+                            <div class="error">Please enter a valid email address</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="signup-password">Password</label>
+                            <input type="password" id="signup-password" placeholder="Create a password">
+                            <div class="error">Password must be at least 8 characters</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="signup-confirm">Confirm Password</label>
+                            <input type="password" id="signup-confirm" placeholder="Confirm your password">
+                            <div class="error">Passwords do not match</div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Sign Up</button>
+                        
+                        <div class="toggle-form">
+                            Already have an account? <a id="show-signin">Sign in</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
